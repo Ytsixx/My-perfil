@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SixxHxRx.js || personal card</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="pages/css/data-styles.css" rel="stylesheet">
+</head>
+
+<body onclick="exec()">
+    <audio autoplay>
+        <source src="pages/audio/sound.mp3" type="audio/mp3">
+    </audio>
+    
+    <!-- 
+     - batten seidebar menuu
+    -->
+    <button class="menu-btn" id="menuBtn"><i class="fas fa-bars"></i></button><!-- end class btn -->
+<!-- Sidebar Menu -->
+<div class="sidebar" id="sidebar">
+  <ul>
+    <li>
+      <a href="#" class="nav-link" data-target="#about">
+        <i class="fa-solid fa-circle-user"></i> Sobre Mim
+      </a>
+    </li>
+    <li>
+      <a href="#" class="nav-link" data-target="#experience">
+        <i class="fa-solid fa-laptop-code"></i> Experiência
+      </a>
+    </li>
+    <li>
+      <a href="#" class="nav-link" data-target="#contact">
+        <i class="fa-solid fa-envelope"></i> Contato
+      </a>
+    </li>
+    <li>
+      <a href="#" class="nav-link" data-target="#api">
+        <i class="fa-solid fa-terminal"></i> API
+      </a>
+    </li>
+    <li>
+      <a href="#" class="nav-link" data-target="#hospedagem">
+        <i class="fa-solid fa-cloud"></i> Hospedagem
+      </a>
+    </li>
+    <li>
+      <a href="#" class="nav-link" data-target="#youtube">
+        <i class="fa-brands fa-youtube"></i> YouTube
+      </a>
+    </li>
+  </ul>
+</div>
+<!-- End Sidebar Menu -->
+    <!-- 
+     - card about
+    -->
+    <div class="card" data-state="#about">
+        <div class="card-header">
+            <div class="card-cover" style="background-image: url('pages/image/background.png')"></div>
+            <img class="card-avatar" src="https://files.catbox.moe/bo4gra.jpeg" alt="avatar" />
+           <h1 class="card-fullname">Sixx.js</h1>
+<h2 class="card-jobtitle">Desenvolvedor Node.js & Web</h2>
+        </div>
+        <div class="card-main">
+            <div class="card-section is-active" id="about">
+            <div class="card-content">
+  <div class="card-subtitle">Nascido – 19-03-2004</div>
+  <p class="card-text">
+    Olá! Eu sou o Sixx, desenvolvedor apaixonado por Node.js e projetos web.  
+    Gosto de criar soluções eficientes, bots e APIs modulares.  
+    Sempre aprendendo e pronto para entregar resultados de qualidade.
+  </p>
+  <p class="card-item-desc">- My: Madalena ❤️‍🩹.</p>
+</div>
+                
+                
+                <div class="card-social">
+                    <a href="https://wa.me/6281276400345?text=hi+bazz">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="https://www.instagram.com/@iqstore78">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://x.com/sixxdev_js">
+                      <i class="fa-brands fa-twitter"></i>
+                    </a>
+                    <a href="https://github.com/Ytsixx">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="card-section" id="experience">
+  <div class="card-content">
+    <div class="card-subtitle">Minha Jornada Até Aqui</div>
+    <div class="card-timeline">
+      <div class="card-item" data-year="2020">
+        <div class="card-item-title">Primeiros Contatos com Programação</div>
+        <div class="card-item-desc">Aprendi lógica de programação e tentei pequenos scripts em Python, limitado pelo meu dispositivo.</div>
+      </div>
+      <div class="card-item" data-year="2021">
+        <div class="card-item-title">Primeiro Bot de WhatsApp</div>
+        <div class="card-item-desc">Explorei Node.js e a biblioteca Baileys. Aprendi sobre automações, eventos e APIs, seguindo tutoriais e fóruns online.</div>
+      </div>
+      <div class="card-item" data-year="2022">
+        <div class="card-item-title">Projetos Web Iniciais</div>
+        <div class="card-item-desc">Criei pequenos websites e dashboards, aprendendo HTML, CSS e JavaScript. Experimentei integração com APIs simples.</div>
+      </div>
+      <div class="card-item" data-year="2023">
+        <div class="card-item-title">Minha Primeira API Pública</div>
+        <div class="card-item-desc">Desenvolvi uma API própria para aprendizado e testes. Entendi rotas, endpoints e deploy em servidores simples.</div>
+      </div>
+      <div class="card-item" data-year="2024">
+        <div class="card-item-title">Aprofundamento em Desenvolvimento Web</div>
+        <div class="card-item-desc">Aprendi Next.js, React.js e Astro.js. Construi projetos mais complexos, integrando front-end e back-end. Comecei a estudar padrões de projeto e boas práticas.</div>
+      </div>
+      <div class="card-item" data-year="2025">
+        <div class="card-item-title">Projetos Profissionais e Bots Avançados</div>
+        <div class="card-item-desc">Desenvolvi bots de WhatsApp mais completos, sistemas web com MongoDB e Node.js, e comecei a contribuir em pequenos projetos colaborativos, ganhando experiência prática real.</div>
+      </div>
+    </div>
+  </div>
+</div>
+            
+            <div class="card-section" id="contact">
+                <div class="card-content">
+                    <div class="card-subtitle">CONTACTOS</div>
+                    <div class="card-contact-wrapper">
+                        <div class="card-contact">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+                                <circle cx="12" cy="10" r="3" />
+                            </svg> Moçambique, Maputo, cidade da Matola
+                        </div>
+                        <div class="card-contact" href="https://wa.me/6281276400345?text=hii+balzz!">
+ <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.0.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M208.4 106.7C205 98.7 196.2 94.4 187.8 96.6L181.1 98.4C127.9 113 86.1 163.1 98.2 221.4C131.6 382 258.1 508.4 418.7 541.9C476.9 554 527.1 512.2 541.6 458.9L543.4 452.2C545.7 443.8 541.4 435 533.3 431.6L440 392.7C432.9 389.8 424.8 391.8 419.9 397.7L383.3 442.4C378.6 448.1 370.7 449.9 364.1 446.7C289.1 411.1 229.1 349.1 196 272.7C193.2 266.1 195 258.5 200.6 254L242.2 219.9C248.1 215.1 250.2 206.9 247.2 199.8L208.4 106.7zM179.4 65.8C203.3 59.3 228.4 71.5 237.9 94.4L276.8 187.7C285.2 207.8 279.4 231.1 262.5 244.9L230.4 271.2C259.4 331.7 307.5 381.4 366.7 412.5L395.2 377.6C409 360.7 432.2 354.9 452.4 363.3L545.7 402.2C568.6 411.7 580.8 436.8 574.3 460.7L572.5 467.4C554.8 532.3 491.2 589.6 412.2 573.2C239.1 537.2 102.9 401 66.9 227.9C50.4 148.8 107.7 85.3 172.7 67.6L179.4 65.8z"/></svg>+258851907875
+                        </div>
+                        <div class="card-contact" href="mailto:support@balxzzy.xyz">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                                <path d="M22 6l-10 7L2 6" />
+                            </svg> sixxhxrx@gmail.com
+                        </div>
+                        
+                        <a href="https://api.balxzzy.xyz">
+                            <button class="contact-me">Projets Api</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="card-batten">
+                <button data-section="#about" class="is-active" onclick="keDomainAbout()">HOME</button>
+                <button data-section="#experience" onclick="keDomainProgres()">PROGRESS</button>
+                <button data-section="#contact" onclick="keDomainContacts()">CONTACT</button>
+            </div>
+        </div>
+    </div><!-- end div class card about -->
+    
+       <!-- 
+          - footer
+        -->
+    <div class="footer">
+  <p style="text-align: center; color: white;">
+    Criador deste site: by SixxHxRx.js ❤️‍🩹
+  </p>
+</div>
+    
+    <!-- partial -->
+    <audio id="audio" style="display:none">
+        <source src="pages/audio/sound.mp3" type="audio/mpeg">
+    </audio>
+    
+    <!-- script function page -->
+    <script src="pages/js/data-script.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/scottschiller/Snowstorm/snowstorm.js" type="text/javascript"></scripts>
+    <script src="https://cdn.rawgit.com/bungfrangki/efeksalju/2a7805c7/efek-salju.js" type="text/javascript"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrambleTextPlugin.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+<!-- ScrollSmoother requires ScrollTrigger -->
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollSmoother.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollToPlugin.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/TextPlugin.min.js"></script>
+</body>
+</html><!-- end >
