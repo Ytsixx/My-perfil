@@ -172,9 +172,19 @@
 </div>
     
     <!-- partial -->
-    <audio id="audio" style="display:none">
-        <source src="pages/audio/sound.mp3" type="audio/mpeg">
-    </audio>
+<audio id="audio" autoplay muted style="display:none">
+  <source src="https://files.catbox.moe/rtkier.mpeg" type="audio/mpeg">
+</audio>
+
+<script>
+  // Alguns navegadores exigem interação antes de tocar áudio com som.
+  // Este script tira o mute após o usuário clicar na página.
+  window.addEventListener('click', () => {
+    const audio = document.getElementById('audio');
+    audio.muted = false;
+    audio.play();
+  });
+                          </script>
     
     <!-- script function page -->
     <script src="pages/js/data-script.js"></script>
