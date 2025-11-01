@@ -7,15 +7,25 @@
 body {
     color: #2b2c48;
     font-family: "Jost", sans-serif;
-    background-image: url("/pages/image/background.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
     min-height: 100vh;
     display: flex;
     flex-wrap: wrap;
     padding: 20px;
+    margin: 0;
+    overflow-x: hidden;
+    position: relative;
+}
+
+#bg-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    object-fit: cover;
 }
 
 .card {
